@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep - Grzegorz Medialny</title>
+    <link rel="stylesheet" href="../kodex.css">
+    <link rel="stylesheet" href="sklep-style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Grzegorz Medialny</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Strona główna</a></li>
+                <li><a href="../omnie/omnie.html">O mnie</a></li>                
+                <li><a href="../galeria/galeria.html">Galeria</a></li>
+                <li><a href="../poetica/poetica.html">Poezja</a></li>
+                <li><a href="../technikalia/technikalia.html">Algorytmy</a></li>
+                <li><a href="sklep.html">Sklep</a></li>
+                <li><a href="../kontakt/kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-shop">
+        <div class="container">
+            <h1>Sklep Artystyczny</h1>
+            <p>Odkryj kolekcję moich prac dostępnych do zakupu</p>
+            <p class="hero-subtitle">Fotografie, grafiki AI, zbiory wierszy i produkty premium</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="shop-filter">
+        <div class="container">
+            <div class="filter-nav">
+                <button class="filter-btn active" data-category="all">Wszystkie</button>
+                <button class="filter-btn" data-category="photography">Fotografie</button>
+                <button class="filter-btn" data-category="ai-art">Grafika AI</button>
+                <button class="filter-btn" data-category="poetry">Poezja</button>
+                <button class="filter-btn" data-category="prints">Druki</button>
+                <button class="filter-btn" data-category="digital">Cyfrowe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                
+                <!-- Photography Products -->
+                <div class="product-card" data-category="photography prints">
+                    <div class="product-image">
+                        <img src="../source/shop/photo-print-1.jpg" alt="Druk fotograficzny - Miasto w kadrach">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="quickView(1)">Szybki podgląd</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Miasto w kadrach</h3>
+                        <p class="product-category">Fotografia • Druk</p>
+                        <div class="product-sizes">
+                            <span class="size-option" data-price="89">A4 (89 zł)</span>
+                            <span class="size-option" data-price="149">A3 (149 zł)</span>
+                            <span class="size-option active" data-price="249">A2 (249 zł)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price" data-product-id="1">249 zł</span>
+                        </div>
+                        <button class="btn-add-to-cart" onclick="addToCart(1, 'Miasto w kadrach', 249, '../source/shop/photo-print-1.jpg')">
+                            Dodaj do koszyka
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="photography digital">
+                    <div class="product-image">
+                        <img src="../source/shop/photo-digital-1.jpg" alt="Zdjęcie cyfrowe - Street Art">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="quickView(2)">Szybki podgląd</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Kolekcja Street Art</h3>
+                        <p class="product-category">Fotografia • Cyfrowa</p>
+                        <div class="product-description">
+                            <p>10 zdjęć wysokiej rozdzielczości</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price" data-product-id="2">59 zł</span>
+                        </div>
+                        <button class="btn-add-to-cart" onclick="addToCart(2, 'Kolekcja Street Art', 59, '../source/shop/photo-digital-1.jpg')">
+                            Dodaj do koszyka
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="photography prints">
+                    <div class="product-image">
+                        <img src="../source/shop/photo-print-2.jpg" alt="Druk fotograficzny - Przyroda">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="quickView(3)">Szybki podgląd</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Harmonia Natury</h3>
+                        <p class="product-category">Fotografia • Druk Canvas</p>
+                        <div class="product-sizes">
+                            <span class="size-option" data-price="129">30x40 (129 zł)</span>
+                            <span class="size-option active" data-price="199">40x60 (199 zł)</span>
+                            <span class="size-option" data-price="299">60x80 (299 zł)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price" data-product-id="3">199 zł</span>
+                        </div>
+                        <button class="btn-add-to-cart" onclick="addToCart(3, 'Harmonia Natury', 199, '../source/shop/photo-print-2.jpg')">
+                            Dodaj do koszyka
+                        </button>
+                    </div>
+                </div>
+
+                <!-- AI Art Products -->
+                <div class="product-card" data-category="ai-art prints">
+                    <div class="product-image">
+                        <img src="../source/shop/ai-print-1.jpg" alt="Druk AI - Cyfrowe sny">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="quickView(4)">Szybki podgląd</button>
+                        </div>
+                        <div class="product-badge">AI Art</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Cyfrowe Sny</h3>
+                        <p class="product-category">AI Art • Limited Edition</p>
+                        <div class="product-sizes">
+                            <span class="size-option" data-price="149">A4 (149 zł)</span>
+                            <span class="size-option active" data-price="249">A3 (249 zł)</span>
+                            <span class="size-option" data-price="399">A2 (399 zł)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price" data-product-id="4">249 zł</span>
+                        </div>
+                        <button class="btn-add-to-cart" onclick="addToCart(4, 'Cyfrowe Sny', 249, '../source/shop/ai-print-1.jpg')">
+                            Dodaj do koszyka
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="ai-art digital">
+                    <div class="product-image">
+                        <img src="../source/shop/ai-collection.jpg" alt="Kolekcja AI Art">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="quickView(5)">Szybki podgląd</button>
+                        </div>
+                        <div class="product-badge bestseller">Bestseller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Pełna Kolekcja AI Art</h3>
+                        <p class="product-category">AI Art • Pakiet Cyfrowy</p>
+                        <div class="product-description">
+                            <p>25 unikalnych grafik + proces twórczy</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="original-price">299 zł</span>
+                            <span class="price" data-product-id="5">199 zł</span>
+                        </div>
+                        <button class="btn-add-to-cart" onclick="addToCart(5, 'Pełna Kolekcja AI Art', 199, '../source/shop/ai-collection.jpg')">
+                            Dodaj do koszyka
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Poetry Products -->
+                <div class="product-card" data-category="poetry digital">
+                    <div class="product-image">
+                        <img src="../source/shop/poetry-book-1.jpg" alt="E-book - Ars Poetica">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="quickView(6)">Szybki podgląd</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ars Poetica - Cyfrowy Zbiór</h3>
+                        <p class="product-category">Poezja • E-book</p>
+                        <div class="product-description">
+                            <p>24 wiersze + ilustracje autorskie</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price" data-product-id="6">39 zł</span>
+                        </div>
+                        <button class="btn-add-to-cart" onclick="addToCart(6, 'Ars Poetica - Cyfrowy Zbiór', 39, '../source/shop/poetry-book-1.jpg')">
+                            Dodaj do koszyka
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="poetry prints">
+                    <div class="product-image">
+                        <img src="../source/shop/poetry-print.jpg" alt="Księga poezji - druk">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="quickView(7)">Szybki podgląd</button>
+                        </div>
+                        <div class="product-badge limited">Limited</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ars Poetica - Księga</h3>
+                        <p class="product-category">Poezja • Druk Premium</p>
+                        <div class="product-description">
+                            <p>Ekskluzywna oprawa, papier premium</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price" data-product-id="7">89 zł</span>
+                        </div>
+                        <button class="btn-add-to-cart" onclick="addToCart(7, 'Ars Poetica - Księga', 89, '../source/shop/poetry-print.jpg')">
+                            Dodaj do koszyka
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Premium Bundle -->
+                <div class="product-card featured" data-category="all">
+                    <div class="product-image">
+                        <img src="../source/shop/premium-bundle.jpg" alt="Pakiet Premium">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="quickView(8)">Szybki podgląd</button>
+                        </div>
+                        <div class="product-badge premium">Premium</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Pakiet Artystyczny Premium</h3>
+                        <p class="product-category">Kompletny • Limitowany</p>
+                        <div class="product-description">
+                            <p>5 druków A3 + AI Art + E-book poezji</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="original-price">899 zł</span>
+                            <span class="price" data-product-id="8">599 zł</span>
+                        </div>
+                        <button class="btn-add-to-cart premium" onclick="addToCart(8, 'Pakiet Artystyczny Premium', 599, '../source/shop/premium-bundle.jpg')">
+                            Dodaj do koszyka
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Koszyk zakupów</h3>
+            <button class="cart-close" onclick="toggleCart()">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <p>Twój koszyk jest pusty</p>
+                <p class="empty-cart-subtitle">Dodaj produkty aby kontynuować</p>
+            </div>
+        </div>
+        <div class="cart-summary" id="cartSummary" style="display: none;">
+            <div class="summary-row">
+                <span>Suma częściowa:</span>
+                <span id="subtotal">0 zł</span>
+            </div>
+            <div class="summary-row">
+                <span>Dostawa:</span>
+                <span id="shipping">Darmowa</span>
+            </div>
+            <div class="summary-row total">
+                <span>Razem:</span>
+                <span id="total">0 zł</span>
+            </div>
+            <button class="btn-checkout" onclick="proceedToCheckout()">
+                Przejdź do płatności
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+    <!-- Quick View Modal -->
+    <div class="quick-view-modal" id="quickViewModal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeQuickView()">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Quick view content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+<!-- To jest komentarz w HTML --> <!------------------------------------------------------------- CZASOWY --------- -->
+<!--    <!-- Newsletter Section -->
+<!--    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Bądź na bieżąco</h2>
+                <p>Zapisz się do newslettera i otrzymuj informacje o nowych pracach i promocjach</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Twój adres e-mail" class="newsletter-input">
+                    <button class="newsletter-btn">Zapisz się</button>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="../index.html">Strona główna</a>
+                <a href="../galeria/galeria.html">Galeria</a>
+                <a href="../poetica/poetica.html">Poezja</a>
+                <a href="../technikalia/technikalia.html">Algorytmy</a>
+                <a href="sklep.html">Sklep</a>
+                <a href="../kontakt/kontakt.html">Kontakt</a>
+            </div>
+            <p>&copy; 2024 Grzegorz Medialny. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Shopping cart functionality
+        let cart = [];
+        let cartCount = 0;
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const category = btn.getAttribute('data-category');
+                filterProducts(category);
+            });
+        });
+
+        function filterProducts(category) {
+            productCards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category').includes(category)) {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'scale(1)';
+                    }, 100);
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'scale(0.8)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+
+        // Size selection
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('size-option')) {
+                const parent = e.target.parentElement;
+                parent.querySelectorAll('.size-option').forEach(opt => opt.classList.remove('active'));
+                e.target.classList.add('active');
+                
+                const price = e.target.getAttribute('data-price');
+                const priceElement = parent.parentElement.querySelector('.price');
+                priceElement.textContent = price + ' zł';
+            }
+        });
+
+        // Cart functions
+        function toggleCart() {
+            const sidebar = document.getElementById('cartSidebar');
+            const overlay = document.getElementById('cartOverlay');
+            
+            if (sidebar.classList.contains('open')) {
+                sidebar.classList.remove('open');
+                overlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            } else {
+                sidebar.classList.add('open');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function addToCart(id, name, price, image) {
+            const existingItem = cart.find(item => item.id === id);
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    id: id,
+                    name: name,
+                    price: price,
+                    image: image,
+                    quantity: 1
+                });
+            }
+            
+            updateCartDisplay();
+            showAddToCartFeedback();
+        }
+
+        function removeFromCart(id) {
+            cart = cart.filter(item => item.id !== id);
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            const cartItems = document.getElementById('cartItems');
+            const cartSummary = document.getElementById('cartSummary');
+            const cartCountElement = document.getElementById('cartCount');
+            
+            cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+            cartCountElement.textContent = cartCount;
+            
+            if (cart.length === 0) {
+                cartItems.innerHTML = `
+                    <div class="empty-cart">
+                        <p>Twój koszyk jest pusty</p>
+                        <p class="empty-cart-subtitle">Dodaj produkty aby kontynuować</p>
+                    </div>
+                `;
+                cartSummary.style.display = 'none';
+            } else {
+                cartItems.innerHTML = cart.map(item => `
+                    <div class="cart-item">
+                        <img src="${item.image}" alt="${item.name}">
+                        <div class="item-details">
+                            <h4>${item.name}</h4>
+                            <p class="item-price">${item.price} zł</p>
+                        </div>
+                        <div class="item-controls">
+                            <button onclick="changeQuantity(${item.id}, -1)">-</button>
+                            <span>${item.quantity}</span>
+                            <button onclick="changeQuantity(${item.id}, 1)">+</button>
+                        </div>
+                        <button class="remove-item" onclick="removeFromCart(${item.id})">🗑️</button>
+                    </div>
+                `).join('');
+                
+                const subtotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+                document.getElementById('subtotal').textContent = subtotal + ' zł';
+                document.getElementById('total').textContent = subtotal + ' zł';
+                cartSummary.style.display = 'block';
+            }
+        }
+
+        function changeQuantity(id, change) {
+            const item = cart.find(item => item.id === id);
+            if (item) {
+                item.quantity += change;
+                if (item.quantity <= 0) {
+                    removeFromCart(id);
+                } else {
+                    updateCartDisplay();
+                }
+            }
+        }
+
+        function showAddToCartFeedback() {
+            // Simple feedback animation
+            const cartIcon = document.querySelector('.cart-icon');
+            cartIcon.style.transform = 'scale(1.2)';
+            setTimeout(() => {
+                cartIcon.style.transform = 'scale(1)';
+            }, 200);
+        }
+
+        function proceedToCheckout() {
+            alert('Przekierowanie do bramki płatności...\n(W pełnej wersji sklepu tutaj byłaby integracja z systemem płatności)');
+        }
+
+        // Quick view functionality
+        function quickView(productId) {
+            const modal = document.getElementById('quickViewModal');
+            const modalBody = document.getElementById('modalBody');
+            
+            // Here you would typically fetch product details
+            modalBody.innerHTML = `
+                <div class="quick-view-content">
+                    <h3>Szybki podgląd produktu ${productId}</h3>
+                    <p>Szczegółowe informacje o produkcie...</p>
+                    <button onclick="closeQuickView()">Zamknij</button>
+                </div>
+            `;
+            
+            modal.style.display = 'flex';
+        }
+
+        function closeQuickView() {
+            document.getElementById('quickViewModal').style.display = 'none';
+        }
+
+        /* STARY KOD - ZAKOMENTOWANY ------------------------------------------------- ZABLOKOWANY CZASOWO ----------------
+// Newsletter functionality - NOWA WERSJA
+document.querySelector('.newsletter-btn').addEventListener('click', function() {
+    const emailInput = document.querySelector('.newsletter-input');
+    const email = emailInput.value.trim();
+    
+    if (!email) {
+        showNewsletterToast('Wprowadź adres e-mail', 'error');
+        return;
+    }
+    
+    // Prosta walidacja email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        showNewsletterToast('Podaj poprawny adres e-mail', 'error');
+        return;
+    }
+    
+    // Symulacja wysyłania
+    const btn = this;
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '📤 Wysyłanie...';
+    btn.disabled = true;
+    
+    setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+        emailInput.value = '';
+        showNewsletterToast('Dziękujemy za zapisanie się do newslettera!', 'success');
+    }, 1500);
+});
+
+function showNewsletterToast(message, type) {
+    const toast = document.createElement('div');
+    toast.className = `newsletter-toast ${type}`;
+    toast.innerHTML = `
+        <div class="toast-content">
+            <span class="toast-icon">${type === 'success' ? '✅' : '⚠️'}</span>
+            <span class="toast-message">${message}</span>
+        </div>
+    `;
+    
+    document.body.appendChild(toast);
+    
+    setTimeout(() => toast.classList.add('show'), 100);
+    
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => document.body.removeChild(toast), 300);
+    }, 4000);
+}
+
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartDisplay();
+            
+            // Product cards animation
+            productCards.forEach(card => {
+                card.style.transition = 'all 0.3s ease';
+            });
+        });
+        */ 
+    </script>
+    
+    <script>
+(function() {
+  // Czy pokazaliśmy już komunikat (żeby nie spamować)
+  let shownNotice = false;
+
+  // Funkcja tworząca mały toast zamiast alert()
+  function showToast(message) {
+    if (shownNotice) return;
+    shownNotice = true;
+    const toast = document.createElement('div');
+    toast.innerText = message;
+    toast.style.position = 'fixed';
+    toast.style.bottom = '20px';
+    toast.style.right = '20px';
+    toast.style.background = 'rgba(30,58,138,0.95)'; // #1e3a8a
+    toast.style.color = '#fff';
+    toast.style.padding = '12px 16px';
+    toast.style.borderRadius = '10px';
+    toast.style.boxShadow = '0 8px 20px rgba(0,0,0,0.2)';
+    toast.style.fontFamily = 'sans-serif';
+    toast.style.zIndex = '10000';
+    toast.style.opacity = '0';
+    toast.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+    document.body.appendChild(toast);
+    requestAnimationFrame(() => {
+      toast.style.opacity = '1';
+      toast.style.transform = 'translateY(0)';
+    });
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateY(10px)';
+      setTimeout(() => document.body.removeChild(toast), 300);
+    }, 4000);
+  }
+
+  // Tekst komunikatu
+  const noticeText = "Wszystkie prawa zastrzeżone.\n© 2025 Grzelo Medialny.";
+
+  // Blokada prawego przycisku + pokazanie komunikatu raz
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    showToast("Wszystkie prawa zastrzeżone. © 2025 Grzelo Medialny.");
+  });
+
+  // Pomocnicza funkcja porównująca klawisz bez względu na wielkość
+  function keyEq(ev, key) {
+    return (ev.key || '').toLowerCase() === (key || '').toLowerCase();
+  }
+
+  // Blokada kombinacji klawiszy
+  document.addEventListener('keydown', function(e) {
+    const ctrlOrCmd = e.ctrlKey || e.metaKey; // Ctrl na Windows, Cmd na Mac
+
+    // Lista blokowanych pojedynczych klawiszy (F12)
+    if (e.key === 'F12') {
+      e.preventDefault(); e.stopPropagation(); return;
+    }
+
+    // Ctrl/Cmd + (A, C, X, U, S, P)  => zaznaczanie/kopiowanie/wyświetl źródła/zapis/druk
+    if (ctrlOrCmd && (keyEq(e, 'a') || keyEq(e, 'c') || keyEq(e, 'x') || keyEq(e, 'u') || keyEq(e, 's') || keyEq(e, 'p'))) {
+      e.preventDefault();
+      e.stopPropagation();
+      // pokazuj komunikat tylko przy Ctrl+C/Ctrl+A (opcjonalnie)
+      if (keyEq(e, 'c') || keyEq(e, 'a')) showToast(noticeText);
+      return false;
+    }
+
+    // Ctrl+Shift+I / Ctrl+Shift+C (DevTools)
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (keyEq(e, 'i') || keyEq(e, 'c'))) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+  });
+
+  // Dodatkowo można wyłączyć selekcję (opcjonalnie) — odkomentuj jeśli chcesz
+  // document.documentElement.classList.add('no-select-js');
+
+})();
+</script>
+
+
+
+</body>
+</html>
