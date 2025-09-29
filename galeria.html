@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Grzegorz Medialny</title>
+    <link rel="stylesheet" href="../kodex.css">
+    <link rel="stylesheet" href="galeria-style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Grzegorz Medialny</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Strona główna</a></li>
+                <li><a href="../omnie/omnie.html">O mnie</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="../poetica/poetica.html">Poezja</a></li>
+                <li><a href="../technikalia/technikalia.html">Algorytmy</a></li>
+                <li><a href="../sklep/sklep.html">Sklep</a></li>
+                <li><a href="../kontakt/kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gallery">
+        <div class="container">
+            <h1>Galeria Fotografii</h1>
+            <p>Odkryj świat przez mój obiektyw - kolekcja zdjęć dokumentujących piękno w różnych jego przejawach</p>
+        </div>
+    </section>
+
+    <!-- Filter Navigation -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-nav">
+                <button class="filter-btn active" data-category="all">Wszystkie</button>
+                <button class="filter-btn" data-category="street-art">Street Art</button>
+                <button class="filter-btn" data-category="portrety">Portrety</button>
+                <button class="filter-btn" data-category="przyroda">Przyroda</button>
+                <button class="filter-btn" data-category="industrial">Industrial</button>
+                <button class="filter-btn" data-category="art">Art</button>
+                <button class="filter-btn" data-category="ai">Grafika AI</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Categories Overview -->
+    <section class="categories-overview">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-card" data-category="street-art">
+                    <div class="category-image">
+                        <img src="../source/street-art-preview.jpg" alt="Street Art - Sztuka ulicy">
+                        <div class="category-overlay">
+                            <h3>Street Art</h3>
+                            <p>Dokumentacja miejskiej sztuki i kultury ulicznej</p>
+                            <span class="photo-count">24 zdjęcia</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="portrety">
+                    <div class="category-image">
+                        <img src="../source/portrety-preview.jpg" alt="Portrety - Fotografia portretowa">
+                        <div class="category-overlay">
+                            <h3>Portrety</h3>
+                            <p>Ludzie i ich historie uchwycone w kadrze</p>
+                            <span class="photo-count">32 zdjęcia</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="przyroda">
+                    <div class="category-image">
+                        <img src="../source/przyroda-preview.jpg" alt="Przyroda - Fotografia przyrodnicza">
+                        <div class="category-overlay">
+                            <h3>Przyroda</h3>
+                            <p>Piękno natury w różnych porach roku</p>
+                            <span class="photo-count">45 zdjęć</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="industrial">
+                    <div class="category-image">
+                        <img src="../source/industrial-preview.jpg" alt="Industrial - Fotografia przemysłowa">
+                        <div class="category-overlay">
+                            <h3>Industrial</h3>
+                            <p>Fascynujące struktury świata przemysłowego</p>
+                            <span class="photo-count">28 zdjęć</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="art">
+                    <div class="category-image">
+                        <img src="../source/art-preview.jpg" alt="Art - Sztuka artystyczna">
+                        <div class="category-overlay">
+                            <h3>Art</h3>
+                            <p>Eksperymentalna fotografia artystyczna</p>
+                            <span class="photo-count">36 zdjęć</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="ai">
+                    <div class="category-image">
+                        <img src="../source/ai-preview.jpg" alt="Grafika AI - Sztuka cyfrowa">
+                        <div class="category-overlay">
+                            <h3>Grafika AI</h3>
+                            <p>Cyfrowa sztuka tworzona z pomocą AI</p>
+                            <span class="photo-count">18 grafik</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery Grid -->
+    <section class="main-gallery">
+        <div class="container">
+            <h2>Wybrane prace</h2>
+            <div class="gallery-grid" id="galleryGrid">
+                
+                <!-- Street Art Photos -->
+                <div class="gallery-item" data-category="street-art">
+                    <img src="../source/street-art/street1.jpg" alt="Street Art - Mural miejski">
+                    <div class="item-overlay">
+                        <h4>Mural miejski</h4>
+                        <p>Street Art</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="street-art">
+                    <img src="../source/street-art/street2.jpg" alt="Street Art - Graffiti artystyczne">
+                    <div class="item-overlay">
+                        <h4>Graffiti artystyczne</h4>
+                        <p>Street Art</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="street-art">
+                    <img src="../source/street-art/street3.jpg" alt="Street Art - Sztuka uliczna">
+                    <div class="item-overlay">
+                        <h4>Sztuka uliczna</h4>
+                        <p>Street Art</p>
+                    </div>
+                </div>
+
+                <!-- Portrait Photos -->
+                <div class="gallery-item" data-category="portrety">
+                    <img src="../source/portrety/portret1.jpg" alt="Portret - Człowiek w mieście">
+                    <div class="item-overlay">
+                        <h4>Człowiek w mieście</h4>
+                        <p>Portrety</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="portrety">
+                    <img src="../source/portrety/portret2.jpg" alt="Portret - Spojrzenie">
+                    <div class="item-overlay">
+                        <h4>Spojrzenie</h4>
+                        <p>Portrety</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="portrety">
+                    <img src="../source/portrety/portret3.jpg" alt="Portret - Emocje">
+                    <div class="item-overlay">
+                        <h4>Emocje</h4>
+                        <p>Portrety</p>
+                    </div>
+                </div>
+
+                <!-- Nature Photos -->
+                <div class="gallery-item" data-category="przyroda">
+                    <img src="../source/przyroda/natura1.jpg" alt="Przyroda - Krajobraz">
+                    <div class="item-overlay">
+                        <h4>Krajobraz</h4>
+                        <p>Przyroda</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="przyroda">
+                    <img src="../source/przyroda/natura2.jpg" alt="Przyroda - Makro">
+                    <div class="item-overlay">
+                        <h4>Makro</h4>
+                        <p>Przyroda</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="przyroda">
+                    <img src="../source/przyroda/natura3.jpg" alt="Przyroda - Las">
+                    <div class="item-overlay">
+                        <h4>Las</h4>
+                        <p>Przyroda</p>
+                    </div>
+                </div>
+
+                <!-- Industrial Photos -->
+                <div class="gallery-item" data-category="industrial">
+                    <img src="../source/industrial/industrial1.jpg" alt="Industrial - Architektura przemysłowa">
+                    <div class="item-overlay">
+                        <h4>Architektura przemysłowa</h4>
+                        <p>Industrial</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="industrial">
+                    <img src="../source/industrial/industrial2.jpg" alt="Industrial - Maszyny">
+                    <div class="item-overlay">
+                        <h4>Maszyny</h4>
+                        <p>Industrial</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="industrial">
+                    <img src="../source/industrial/industrial3.jpg" alt="Industrial - Struktury">
+                    <div class="item-overlay">
+                        <h4>Struktury</h4>
+                        <p>Industrial</p>
+                    </div>
+                </div>
+
+                <!-- Art Photos -->
+                <div class="gallery-item" data-category="art">
+                    <img src="../source/art/art1.jpg" alt="Art - Abstrakcja">
+                    <div class="item-overlay">
+                        <h4>Abstrakcja</h4>
+                        <p>Art</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="art">
+                    <img src="../source/art/art2.jpg" alt="Art - Kompozycja">
+                    <div class="item-overlay">
+                        <h4>Kompozycja</h4>
+                        <p>Art</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="art">
+                    <img src="../source/art/art3.jpg" alt="Art - Eksperyment">
+                    <div class="item-overlay">
+                        <h4>Eksperyment</h4>
+                        <p>Art</p>
+                    </div>
+                </div>
+
+                <!-- AI Graphics -->
+                <div class="gallery-item" data-category="ai">
+                    <img src="../source/ai/ai-art1.jpg" alt="AI - Cyfrowa przygoda">
+                    <div class="item-overlay">
+                        <h4>Cyfrowa przygoda</h4>
+                        <p>Grafika AI</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="ai">
+                    <img src="../source/ai/ai-art2.jpg" alt="AI - Futurystyczna wizja">
+                    <div class="item-overlay">
+                        <h4>Futurystyczna wizja</h4>
+                        <p>Grafika AI</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="ai">
+                    <img src="../source/ai/ai-art3.jpg" alt="AI - Algorytmiczny obraz">
+                    <div class="item-overlay">
+                        <h4>Algorytmiczny obraz</h4>
+                        <p>Grafika AI</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn-load-more" id="loadMoreBtn">Załaduj więcej</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Stats -->
+    <section class="gallery-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="183">0</span>
+                    <span class="stat-label">Zdjęć w galerii</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="6">0</span>
+                    <span class="stat-label">Kategorii</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="15">0</span>
+                    <span class="stat-label">Wystaw</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5">0</span>
+                    <span class="stat-label">Lat doświadczenia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gallery-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Podobają Ci się moje prace?</h2>
+                <p>Sprawdź mój sklep online gdzie możesz kupić druki moich fotografii lub skontaktuj się ze mną w sprawie sesji fotograficznej.</p>
+                <div class="cta-buttons">
+                    <a href="../sklep/sklep.html" class="btn-cta primary">Odwiedź sklep</a>
+                    <a href="../kontakt/kontakt.html" class="btn-cta secondary">Skontaktuj się</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxCategory"></p>
+            </div>
+            <button class="lightbox-prev" id="lightboxPrev">&#8249;</button>
+            <button class="lightbox-next" id="lightboxNext">&#8250;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="../index.html">Strona główna</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="../poetica/poetica.html">Poezja</a>
+                <a href="../technikalia/technikalia.html">Algorytmy</a>
+                <a href="../sklep/sklep.html">Sklep</a>
+                <a href="../kontakt/kontakt.html">Kontakt</a>
+            </div>
+            <p>&copy; 2024 Grzegorz Medialny. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Gallery filtering functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const categoryCards = document.querySelectorAll('.category-card');
+
+        // Filter functionality
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                const category = btn.getAttribute('data-category');
+                filterGallery(category);
+            });
+        });
+
+        // Category cards click functionality
+        categoryCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const category = card.getAttribute('data-category');
+                // Update active filter button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.getAttribute('data-category') === category) {
+                        btn.classList.add('active');
+                    }
+                });
+                filterGallery(category);
+                
+                // Smooth scroll to gallery
+                document.getElementById('galleryGrid').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        function filterGallery(category) {
+            galleryItems.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    }, 100);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.8)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxTitle = document.getElementById('lightboxTitle');
+        const lightboxCategory = document.getElementById('lightboxCategory');
+        const lightboxClose = document.getElementById('lightboxClose');
+        const lightboxPrev = document.getElementById('lightboxPrev');
+        const lightboxNext = document.getElementById('lightboxNext');
+
+        let currentImageIndex = 0;
+        let visibleImages = [];
+
+        // Open lightbox when clicking on gallery item
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                updateVisibleImages();
+                currentImageIndex = visibleImages.indexOf(item);
+                openLightbox(item);
+            });
+        });
+
+        function updateVisibleImages() {
+            visibleImages = Array.from(galleryItems).filter(item => 
+                item.style.display !== 'none'
+            );
+        }
+
+        function openLightbox(item) {
+            const img = item.querySelector('img');
+            const title = item.querySelector('.item-overlay h4').textContent;
+            const category = item.querySelector('.item-overlay p').textContent;
+            
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightboxTitle.textContent = title;
+            lightboxCategory.textContent = category;
+            
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function showPrevImage() {
+            currentImageIndex = (currentImageIndex - 1 + visibleImages.length) % visibleImages.length;
+            openLightbox(visibleImages[currentImageIndex]);
+        }
+
+        function showNextImage() {
+            currentImageIndex = (currentImageIndex + 1) % visibleImages.length;
+            openLightbox(visibleImages[currentImageIndex]);
+        }
+
+        // Lightbox event listeners
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxPrev.addEventListener('click', showPrevImage);
+        lightboxNext.addEventListener('click', showNextImage);
+
+        // Close lightbox when clicking outside image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.style.display === 'flex') {
+                switch(e.key) {
+                    case 'Escape':
+                        closeLightbox();
+                        break;
+                    case 'ArrowLeft':
+                        showPrevImage();
+                        break;
+                    case 'ArrowRight':
+                        showNextImage();
+                        break;
+                }
+            }
+        });
+
+        // Stats animation
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = parseInt(entry.target.getAttribute('data-count'));
+                        let count = 0;
+                        const increment = target / 50;
+                        
+                        const timer = setInterval(() => {
+                            count += increment;
+                            if (count >= target) {
+                                entry.target.textContent = target;
+                                clearInterval(timer);
+                            } else {
+                                entry.target.textContent = Math.floor(count);
+                            }
+                        }, 30);
+                    }
+                });
+            }, { threshold: 0.7 });
+
+            statNumbers.forEach(stat => observer.observe(stat));
+        }
+
+        // Load more functionality (placeholder)
+        document.getElementById('loadMoreBtn').addEventListener('click', function() {
+            // Here you would typically load more images via AJAX
+            this.textContent = 'Wszystkie zdjęcia załadowane';
+            this.disabled = true;
+            this.style.opacity = '0.5';
+        });
+
+        // Initialize animations when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            animateStats();
+            
+            // Initialize gallery items with transition
+            galleryItems.forEach(item => {
+                item.style.transition = 'all 0.3s ease';
+            });
+        });
+    </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const galleryItems = document.querySelectorAll(".gallery-item");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      // Usuwamy klasę active ze wszystkich przycisków
+      filterButtons.forEach(btn => btn.classList.remove("active"));
+      // Dodajemy active do klikniętego
+      button.classList.add("active");
+
+      const category = button.getAttribute("data-filter");
+
+      galleryItems.forEach(item => {
+        if (category === "all" || item.getAttribute("data-category") === category) {
+          item.style.display = "block"; // pokaż
+          item.classList.add("fade-in");
+        } else {
+          item.style.display = "none"; // ukryj
+        }
+      });
+    });
+  });
+});
+</script>
+
+<script>
+// Fix lazy loading
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img[loading="lazy"]');
+    images.forEach(img => {
+        img.addEventListener('load', function() {
+            this.classList.add('loaded');
+        });
+        
+        // Force load if not visible
+        setTimeout(() => {
+            if (!img.complete) {
+                img.src = img.src;
+            }
+        }, 1000);
+    });
+});
+</script>
+
+<script>
+(function() {
+  // Czy pokazaliśmy już komunikat (żeby nie spamować)
+  let shownNotice = false;
+
+  // Funkcja tworząca mały toast zamiast alert()
+  function showToast(message) {
+    if (shownNotice) return;
+    shownNotice = true;
+    const toast = document.createElement('div');
+    toast.innerText = message;
+    toast.style.position = 'fixed';
+    toast.style.bottom = '20px';
+    toast.style.right = '20px';
+    toast.style.background = 'rgba(30,58,138,0.95)'; // #1e3a8a
+    toast.style.color = '#fff';
+    toast.style.padding = '12px 16px';
+    toast.style.borderRadius = '10px';
+    toast.style.boxShadow = '0 8px 20px rgba(0,0,0,0.2)';
+    toast.style.fontFamily = 'sans-serif';
+    toast.style.zIndex = '10000';
+    toast.style.opacity = '0';
+    toast.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+    document.body.appendChild(toast);
+    requestAnimationFrame(() => {
+      toast.style.opacity = '1';
+      toast.style.transform = 'translateY(0)';
+    });
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateY(10px)';
+      setTimeout(() => document.body.removeChild(toast), 300);
+    }, 4000);
+  }
+
+  // Tekst komunikatu
+  const noticeText = "Wszystkie prawa zastrzeżone.\n© 2025 Grzelo Medialny.";
+
+  // Blokada prawego przycisku + pokazanie komunikatu raz
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    showToast("Wszystkie prawa zastrzeżone. © 2025 Grzelo Medialny.");
+  });
+
+  // Pomocnicza funkcja porównująca klawisz bez względu na wielkość
+  function keyEq(ev, key) {
+    return (ev.key || '').toLowerCase() === (key || '').toLowerCase();
+  }
+
+  // Blokada kombinacji klawiszy
+  document.addEventListener('keydown', function(e) {
+    const ctrlOrCmd = e.ctrlKey || e.metaKey; // Ctrl na Windows, Cmd na Mac
+
+    // Lista blokowanych pojedynczych klawiszy (F12)
+    if (e.key === 'F12') {
+      e.preventDefault(); e.stopPropagation(); return;
+    }
+
+    // Ctrl/Cmd + (A, C, X, U, S, P)  => zaznaczanie/kopiowanie/wyświetl źródła/zapis/druk
+    if (ctrlOrCmd && (keyEq(e, 'a') || keyEq(e, 'c') || keyEq(e, 'x') || keyEq(e, 'u') || keyEq(e, 's') || keyEq(e, 'p'))) {
+      e.preventDefault();
+      e.stopPropagation();
+      // pokazuj komunikat tylko przy Ctrl+C/Ctrl+A (opcjonalnie)
+      if (keyEq(e, 'c') || keyEq(e, 'a')) showToast(noticeText);
+      return false;
+    }
+
+    // Ctrl+Shift+I / Ctrl+Shift+C (DevTools)
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (keyEq(e, 'i') || keyEq(e, 'c'))) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+  });
+
+  // Dodatkowo można wyłączyć selekcję (opcjonalnie) — odkomentuj jeśli chcesz
+  // document.documentElement.classList.add('no-select-js');
+
+})();
+</script>
+
+</body>
+</html>
