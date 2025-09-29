@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ars Poetica - Grzegorz Medialny</title>
+    <link rel="stylesheet" href="../kodex.css">
+    <link rel="stylesheet" href="poetica-style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Grzegorz Medialny</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Strona główna</a></li>
+                <li><a href="../omnie/omnie.html">O mnie</a></li>
+                <li><a href="../galeria/galeria.html">Galeria</a></li>
+                <li><a href="poetica.html" class="active">Poezja</a></li>
+                <li><a href="../technikalia/technikalia.html">Algorytmy</a></li>
+                <li><a href="../sklep/sklep.html">Sklep</a></li>
+                <li><a href="../kontakt/kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-poetica">
+        <div class="container">
+            <h1>Ars Poetica</h1>
+            <p class="hero-subtitle">Słowa które malują obrazy w wyobraźni</p>
+            <p>Poezja to dla mnie sposób na wyrażenie tego, co wykracza poza ramy fotografii - obszar czystych emocji i abstrakcyjnych myśli, gdzie każde słowo tańczy z obrazem.</p>
+        </div>
+    </section>
+
+    <!-- Poetry Introduction -->
+    <section class="poetry-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>O mojej poezji</h2>
+                <p>Wiersze powstają w dialogu z fotografią - gdy obraz nie wystarcza, słowo dopowiada to, czego oko nie widzi. Każdy wiersz to podróż do wnętrza emocji, eksploracja granic między tym co widzialne a tym co odczuwalne.</p>
+                <p>W moich tekstach przeplatają się motywy miejskie z refleksjami nad naturą ludzką, obserwacje codzienności z metafizycznymi pytaniami. Słowo staje się pędzlem, którym maluję na płótnie wyobraźni.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poetry Collection -->
+    <section class="poetry-collection">
+        <div class="container">
+            <h2>Kolekcja wierszy</h2>
+            
+            <!-- Poem 1 -->
+            <div class="poem-section">
+                <div class="poem-container">
+                    <div class="poem-illustration">
+                        <img src="../source/poetry/illustration1.jpg" alt="Ilustracja do wiersza - Miasto w kadrach">
+                        <div class="illustration-overlay">
+                            <span class="illustration-info">Fotografia cyfrowa | 2024</span>
+                        </div>
+                    </div>
+                    <div class="poem-content">
+                        <h3 class="poem-title">Miasto w kadrach</h3>
+                        <div class="poem-meta">
+                            <span class="poem-date">15 marca 2024</span>
+                            <span class="poem-category">Życie miejskie</span>
+                        </div>
+                        <div class="poem-text">
+                            <p>Między betonu szarością a nieba błękitem,<br>
+                            Łapię spojrzenia, co gubią się w tłumie.<br>
+                            Każdy krok to nowa historia,<br>
+                            Każdy oddech - fragment życia.</p>
+                            
+                            <p>Ulice mówią językiem cieni,<br>
+                            Budynki szeptają tajemnice.<br>
+                            W obiektywie zamykam chwile,<br>
+                            Co uciekają zbyt szybko.</p>
+                            
+                            <p>Miasto pulsuje w rytmie serc,<br>
+                            Które biją pod skórą asfaltu.<br>
+                            Jestem kronikarzem tego wszystkiego,<br>
+                            Co dzieje się między.<br>
+                            Między jednym klatkiem a drugim,<br>
+                            Między słowem a ciszą.</p>
+                        </div>
+                        <div class="poem-footer">
+                            <button class="btn-read-more" onclick="togglePoem(this)">Czytaj więcej</button>
+                            <div class="poem-stats">
+                                <span class="read-time">3 min czytania</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poem 2 -->
+            <div class="poem-section">
+                <div class="poem-container reverse">
+                    <div class="poem-content">
+                        <h3 class="poem-title">Algorytmiczne sny</h3>
+                        <div class="poem-meta">
+                            <span class="poem-date">2 kwietnia 2024</span>
+                            <span class="poem-category">Technologia</span>
+                        </div>
+                        <div class="poem-text">
+                            <p>W cyfrowych snach rodzą się obrazy,<br>
+                            Które nigdy nie istniały.<br>
+                            Algorytm marzy o kolorach,<br>
+                            Których oko nie widziało.</p>
+                            
+                            <p>Między jedynkami a zerami<br>
+                            Kryje się nowa forma piękna.<br>
+                            AI nie śni - to ja przez nie śnię,<br>
+                            Przekładając myśli na piksele.</p>
+                            
+                            <p>W tej cyfrowej alchemii<br>
+                            Powstaje sztuka bez pędzla,<br>
+                            Poezja bez papieru,<br>
+                            Muzyka bez instrumentu.</p>
+                            
+                            <p>Czy maszyna może być poetą?<br>
+                            Czy kod może mieć duszę?<br>
+                            Odpowiedzi szukam w obrazach,<br>
+                            Które tworzymy razem.</p>
+                        </div>
+                        <div class="poem-footer">
+                            <button class="btn-read-more" onclick="togglePoem(this)">Czytaj więcej</button>
+                            <div class="poem-stats">
+                                <span class="read-time">4 min czytania</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="poem-illustration">
+                        <img src="../source/poetry/illustration2.jpg" alt="Ilustracja do wiersza - Algorytmiczne sny">
+                        <div class="illustration-overlay">
+                            <span class="illustration-info">AI Art | 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poem 3 -->
+            <div class="poem-section">
+                <div class="poem-container">
+                    <div class="poem-illustration">
+                        <img src="../source/poetry/illustration3.jpg" alt="Ilustracja do wiersza - Światło i cień">
+                        <div class="illustration-overlay">
+                            <span class="illustration-info">Fotografia analogowa | 2024</span>
+                        </div>
+                    </div>
+                    <div class="poem-content">
+                        <h3 class="poem-title">Światło i cień</h3>
+                        <div class="poem-meta">
+                            <span class="poem-date">28 lutego 2024</span>
+                            <span class="poem-category">Filozofia</span>
+                        </div>
+                        <div class="poem-text">
+                            <p>Światło bez cienia jest ślepe,<br>
+                            Cień bez światła - niemy.<br>
+                            W tej wiecznej walce<br>
+                            Rodzi się prawda.</p>
+                            
+                            <p>Fotografuję nie to co widzę,<br>
+                            Ale to czego nie ma.<br>
+                            Przestrzeń między,<br>
+                            Czas który ucieka.</p>
+                            
+                            <p>Każdy kadr to pytanie:<br>
+                            Co kryje się za?<br>
+                            Każdy klik migawki -<br>
+                            Próba odpowiedzi.</p>
+                        </div>
+                        <div class="poem-footer">
+                            <button class="btn-read-more" onclick="togglePoem(this)">Czytaj więcej</button>
+                            <div class="poem-stats">
+                                <span class="read-time">2 min czytania</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poem 4 -->
+            <div class="poem-section">
+                <div class="poem-container reverse">
+                    <div class="poem-content">
+                        <h3 class="poem-title">Portret nieznajomego</h3>
+                        <div class="poem-meta">
+                            <span class="poem-date">10 stycznia 2024</span>
+                            <span class="poem-category">Ludzie</span>
+                        </div>
+                        <div class="poem-text">
+                            <p>W oczach nieznajomego<br>
+                            Czytam historie, których nie znam.<br>
+                            Każda zmarszczka to rozdział,<br>
+                            Każdy uśmiech - epilog.</p>
+                            
+                            <p>Przez ułamek sekundy<br>
+                            Jesteśmy połączeni.<br>
+                            Obiektyw staje się mostem<br>
+                            Między dwiema duszami.</p>
+                            
+                            <p>Kto z nas jest bardziej nagim?<br>
+                            Ten który patrzy,<br>
+                            Czy ten który jest widziany?</p>
+                            
+                            <p>W portrecie zachowuję<br>
+                            Nie twarz, ale moment.<br>
+                            Nie wygląd, ale istnienie.<br>
+                            Nie osobę, ale życie.</p>
+                        </div>
+                        <div class="poem-footer">
+                            <button class="btn-read-more" onclick="togglePoem(this)">Czytaj więcej</button>
+                            <div class="poem-stats">
+                                <span class="read-time">3 min czytania</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="poem-illustration">
+                        <img src="../source/poetry/illustration4.jpg" alt="Ilustracja do wiersza - Portret nieznajomego">
+                        <div class="illustration-overlay">
+                            <span class="illustration-info">Portret | 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poem 5 -->
+            <div class="poem-section">
+                <div class="poem-container">
+                    <div class="poem-illustration">
+                        <img src="../source/poetry/illustration5.jpg" alt="Ilustracja do wiersza - Przemysłowe serce">
+                        <div class="illustration-overlay">
+                            <span class="illustration-info">Industrial | 2024</span>
+                        </div>
+                    </div>
+                    <div class="poem-content">
+                        <h3 class="poem-title">Przemysłowe serce</h3>
+                        <div class="poem-meta">
+                            <span class="poem-date">5 maja 2024</span>
+                            <span class="poem-category">Przemysł</span>
+                        </div>
+                        <div class="poem-text">
+                            <p>Stalowe żebra fabryki<br>
+                            Oddychają parą.<br>
+                            W rytmie maszyn<br>
+                            Bije przemysłowe serce.</p>
+                            
+                            <p>Tu piękno ma inną formę -<br>
+                            Geometrię funkcji,<br>
+                            Estetykę użyteczności,<br>
+                            Poezję produkcji.</p>
+                            
+                            <p>Każda śruba ma swoje miejsce,<br>
+                            Każdy przewód - cel.<br>
+                            W tym pozornym chaosie<br>
+                            Kryje się porządek.</p>
+                            
+                            <p>Fotografuję nie ruinę,<br>
+                            Ale metamorfozę.<br>
+                            Nie zanik, ale ewolucję.<br>
+                            Przeszłość która staje się przyszłością.</p>
+                        </div>
+                        <div class="poem-footer">
+                            <button class="btn-read-more" onclick="togglePoem(this)">Czytaj więcej</button>
+                            <div class="poem-stats">
+                                <span class="read-time">3 min czytania</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poem 6 -->
+            <div class="poem-section">
+                <div class="poem-container reverse">
+                    <div class="poem-content">
+                        <h3 class="poem-title">Natura mówi</h3>
+                        <div class="poem-meta">
+                            <span class="poem-date">20 czerwca 2024</span>
+                            <span class="poem-category">Przyroda</span>
+                        </div>
+                        <div class="poem-text">
+                            <p>Las szepce w języku liści,<br>
+                            Rzeka mówi nurtem.<br>
+                            Ja tylko tłumaczę<br>
+                            Na język światła.</p>
+                            
+                            <p>Każdy kwiat to wiersz,<br>
+                            Każde drzewo - opowieść.<br>
+                            W naturze nie ma przypadku,<br>
+                            Tylko harmonia.</p>
+                            
+                            <p>Makro obiektyw odkrywa<br>
+                            Wszechświaty w kroplach rosy.<br>
+                            Co wydaje się małe,<br>
+                            Okazuje się nieskończone.</p>
+                            
+                            <p>Natura nie pozuje -<br>
+                            Po prostu jest.<br>
+                            To największa lekcja<br>
+                            Dla każdego artysty.</p>
+                        </div>
+                        <div class="poem-footer">
+                            <button class="btn-read-more" onclick="togglePoem(this)">Czytaj więcej</button>
+                            <div class="poem-stats">
+                                <span class="read-time">2 min czytania</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="poem-illustration">
+                        <img src="../source/poetry/illustration6.jpg" alt="Ilustracja do wiersza - Natura mówi">
+                        <div class="illustration-overlay">
+                            <span class="illustration-info">Makrofotografia | 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Poetry Stats -->
+    <section class="poetry-stats">
+        <div class="container">
+            <div class="stats-content">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="24">0</span>
+                    <span class="stat-label">Wiersze opublikowane</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="6">0</span>
+                    <span class="stat-label">Kategorii tematycznych</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-label">Lata twórczości poetyckiej</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="12">0</span>
+                    <span class="stat-label">Ilustracji autorskich</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poetry Philosophy -->
+    <section class="poetry-philosophy">
+        <div class="container">
+            <div class="philosophy-content">
+                <h2>Filozofia twórcza</h2>
+                <div class="philosophy-grid">
+                    <div class="philosophy-card">
+                        <div class="card-icon">🎭</div>
+                        <h3>Słowo i obraz</h3>
+                        <p>Poezja i fotografia to dla mnie dwie strony tej samej monety. Słowa malują obrazy w wyobraźni, zdjęcia opowiadają historie bez słów.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div class="card-icon">🌊</div>
+                        <h3>Rytm życia</h3>
+                        <p>Każdy wiersz ma swój rytm, jak każde zdjęcie ma swoją kompozycję. Szukam harmonii między tym co słyszę a tym co widzę.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div class="card-icon">🔍</div>
+                        <h3>Obserwacja</h3>
+                        <p>Poeta, jak fotograf, musi być dobrym obserwatorem. Szczegóły, które inni pomijają, często stają się sercem utworu.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div class="card-icon">⚡</div>
+                        <h3>Moment</h3>
+                        <p>Wiersz, jak dobre zdjęcie, rodzi się w konkretnym momencie. To chwila, gdy wszystko składa się w całość.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="poetry-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Chcesz przeczytać więcej?</h2>
+                <p>Odwiedź mój sklep, gdzie znajdziesz autorskie zbiory wierszy w formie cyfrowej i drukowanej, lub skontaktuj się ze mną w sprawie współpracy poetyckiej.</p>
+                <div class="cta-buttons">
+                    <a href="../sklep/sklep.html" class="btn-cta primary">Kup zbiór wierszy</a>
+                    <a href="../kontakt/kontakt.html" class="btn-cta secondary">Współpraca poetycka</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="../index.html">Strona główna</a>
+                <a href="../galeria/galeria.html">Galeria</a>
+                <a href="poetica.html">Poezja</a>
+                <a href="../technikalia/technikalia.html">Algorytmy</a>
+                <a href="../sklep/sklep.html">Sklep</a>
+                <a href="../kontakt/kontakt.html">Kontakt</a>
+            </div>
+            <p>&copy; 2024 Grzegorz Medialny. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle poem expansion
+        function togglePoem(button) {
+            const poemContent = button.closest('.poem-content');
+            const poemText = poemContent.querySelector('.poem-text');
+            const isExpanded = poemText.classList.contains('expanded');
+            
+            if (isExpanded) {
+                poemText.classList.remove('expanded');
+                button.textContent = 'Czytaj więcej';
+            } else {
+                poemText.classList.add('expanded');
+                button.textContent = 'Zwiń';
+            }
+        }
+
+        // Stats animation
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = parseInt(entry.target.getAttribute('data-count'));
+                        let count = 0;
+                        const increment = target / 30;
+                        
+                        const timer = setInterval(() => {
+                            count += increment;
+                            if (count >= target) {
+                                entry.target.textContent = target;
+                                clearInterval(timer);
+                            } else {
+                                entry.target.textContent = Math.floor(count);
+                            }
+                        }, 50);
+                    }
+                });
+            }, { threshold: 0.7 });
+
+            statNumbers.forEach(stat => observer.observe(stat));
+        }
+
+        // Scroll animations
+        function initScrollAnimations() {
+            const elements = document.querySelectorAll('.poem-section, .philosophy-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(50px)';
+                element.style.transition = 'all 0.8s ease-out';
+                observer.observe(element);
+            });
+        }
+
+        // Reading progress indicator
+        function initReadingProgress() {
+            const progressBar = document.createElement('div');
+            progressBar.className = 'reading-progress';
+            document.body.appendChild(progressBar);
+
+            window.addEventListener('scroll', () => {
+                const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+                progressBar.style.width = scrolled + '%';
+            });
+        }
+
+        // Initialize everything when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            animateStats();
+            initScrollAnimations();
+            initReadingProgress();
+        });
+    </script>
+
+    <script>
+(function() {
+  // Czy pokazaliśmy już komunikat (żeby nie spamować)
+  let shownNotice = false;
+
+  // Funkcja tworząca mały toast zamiast alert()
+  function showToast(message) {
+    if (shownNotice) return;
+    shownNotice = true;
+    const toast = document.createElement('div');
+    toast.innerText = message;
+    toast.style.position = 'fixed';
+    toast.style.bottom = '20px';
+    toast.style.right = '20px';
+    toast.style.background = 'rgba(30,58,138,0.95)'; // #1e3a8a
+    toast.style.color = '#fff';
+    toast.style.padding = '12px 16px';
+    toast.style.borderRadius = '10px';
+    toast.style.boxShadow = '0 8px 20px rgba(0,0,0,0.2)';
+    toast.style.fontFamily = 'sans-serif';
+    toast.style.zIndex = '10000';
+    toast.style.opacity = '0';
+    toast.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+    document.body.appendChild(toast);
+    requestAnimationFrame(() => {
+      toast.style.opacity = '1';
+      toast.style.transform = 'translateY(0)';
+    });
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateY(10px)';
+      setTimeout(() => document.body.removeChild(toast), 300);
+    }, 4000);
+  }
+
+  // Tekst komunikatu
+  const noticeText = "Wszystkie prawa zastrzeżone.\n© 2025 Grzelo Medialny.";
+
+  // Blokada prawego przycisku + pokazanie komunikatu raz
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    showToast("Wszystkie prawa zastrzeżone. © 2025 Grzelo Medialny.");
+  });
+
+  // Pomocnicza funkcja porównująca klawisz bez względu na wielkość
+  function keyEq(ev, key) {
+    return (ev.key || '').toLowerCase() === (key || '').toLowerCase();
+  }
+
+  // Blokada kombinacji klawiszy
+  document.addEventListener('keydown', function(e) {
+    const ctrlOrCmd = e.ctrlKey || e.metaKey; // Ctrl na Windows, Cmd na Mac
+
+    // Lista blokowanych pojedynczych klawiszy (F12)
+    if (e.key === 'F12') {
+      e.preventDefault(); e.stopPropagation(); return;
+    }
+
+    // Ctrl/Cmd + (A, C, X, U, S, P)  => zaznaczanie/kopiowanie/wyświetl źródła/zapis/druk
+    if (ctrlOrCmd && (keyEq(e, 'a') || keyEq(e, 'c') || keyEq(e, 'x') || keyEq(e, 'u') || keyEq(e, 's') || keyEq(e, 'p'))) {
+      e.preventDefault();
+      e.stopPropagation();
+      // pokazuj komunikat tylko przy Ctrl+C/Ctrl+A (opcjonalnie)
+      if (keyEq(e, 'c') || keyEq(e, 'a')) showToast(noticeText);
+      return false;
+    }
+
+    // Ctrl+Shift+I / Ctrl+Shift+C (DevTools)
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (keyEq(e, 'i') || keyEq(e, 'c'))) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+  });
+
+  // Dodatkowo można wyłączyć selekcję (opcjonalnie) — odkomentuj jeśli chcesz
+  // document.documentElement.classList.add('no-select-js');
+
+})();
+</script>
+
+</body>
+</html>
