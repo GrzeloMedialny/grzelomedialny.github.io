@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technikalia - Grzegorz Medialny</title>
+    <link rel="stylesheet" href="../kodex.css">
+    <link rel="stylesheet" href="technikalia-style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Grzegorz Medialny</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Strona główna</a></li>
+                <li><a href="../omnie/omnie.html">O mnie</a></li>
+                <li><a href="../galeria/galeria.html">Galeria</a></li>
+                <li><a href="../poetica/poetica.html">Poezja</a></li>
+                <li><a href="technikalia.html" class="active">Algorytmy</a></li>
+                <li><a href="../sklep/sklep.html">Sklep</a></li>
+                <li><a href="../kontakt/kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-tech">
+        <div class="container">
+            <h1>Technikalia & Algorytmy</h1>
+            <p>Eksploracja technologii, kodowanie i eksperymenty z AI</p>
+            <p class="hero-subtitle">Odkryj moje projekty programistyczne na GitHub</p>
+            <div class="github-link">
+                <a href="#github-section" class="btn-github">
+                    <span class="github-icon">📚</span>
+                    Zobacz mój GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Integration Info -->
+    <section class="github-info">
+        <div class="container">
+            <div class="info-banner">
+                <div class="banner-icon">ℹ️</div>
+                <div class="banner-content">
+                    <h3>Moje projekty na GitHub</h3>
+                    <p>Poniżej znajdziesz bezpośredni dostęp do mojego profilu GitHub z aktualnymi projektami, algorytmami i eksperymentami technologicznymi. Możesz przeglądać repozytoria, kod źródłowy i dokumentację.</p>
+                </div>
+                <button onclick="refreshGitHub()" class="btn-refresh">🔄 Odśwież</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Screenshot Container -->
+    <section class="github-container" id="github-section">
+        <div class="github-preview">
+            <div class="preview-header">
+                <div class="browser-buttons">
+                    <span class="btn-close"></span>
+                    <span class="btn-minimize"></span>
+                    <span class="btn-maximize"></span>
+                </div>
+                <div class="address-bar">
+                    <span class="address-text">https://github.com/GrzeloMedialny</span>
+                </div>
+                <div class="github-actions">
+                    <button onclick="openGitHub()" class="btn-live">
+                        🔗 Otwórz na GitHub
+                    </button>
+                </div>
+            </div>
+            <div class="github-screenshot">
+                <img src="../source/github-screenshot.jpg" alt="Screenshot mojego profilu GitHub - GrzeloMedialny" class="protected-img">
+                <div class="screenshot-overlay">
+                    <div class="overlay-content">
+                        <h3>🚀 Zobacz moje projekty na żywo</h3>
+                        <p>Kliknij aby przejść do mojego profilu GitHub</p>
+                        <button onclick="openGitHub()" class="btn-visit-github">
+                            Odwiedź GitHub
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h2>Umiejętności techniczne</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon">💻</div>
+                    <h3>Programowanie</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-icon">🤖</div>
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">OpenAI API</span>
+                        <span class="skill-tag">Stable Diffusion</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">NLP</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-icon">🛠️</div>
+                    <h3>Narzędzia</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Photoshop</span>
+                        <span class="skill-tag">Lightroom</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-icon">📊</div>
+                    <h3>Analiza danych</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Access</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Preview -->
+    <section class="projects-preview">
+        <div class="container">
+            <h2>Przykładowe projekty</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🎨</div>
+                    <h3>AI Art Generator</h3>
+                    <p>Narzędzie do generowania grafik z użyciem sztucznej inteligencji. Integracja z różnymi modelami AI dla tworzenia unikalnych obrazów.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">API</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon">📸</div>
+                    <h3>Photo Processor</h3>
+                    <p>Automatyczne przetwarzanie i katalogowanie zdjęć. Algorytmy do analizy kompozycji i automatycznej korekcji kolorów.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">PIL</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon">✍️</div>
+                    <h3>Poetry Analyzer</h3>
+                    <p>Analiza struktury i rytmu wierszy. Narzędzie do badania metryki poetyckiej i generowania statystyk literackich.</p>
+                    <div class="project-tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">NLTK</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon">🌐</div>
+                    <h3>Portfolio Website</h3>
+                    <p>Responsywna strona internetowa z galerią, sklepem i systemem zarządzania treścią. Nowoczesny design i optymalizacja SEO.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Stats -->
+    <section class="github-stats">
+        <div class="container">
+            <h2>Statystyki GitHub</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">📁</div>
+                    <div class="stat-number" data-count="6">0</div>
+                    <div class="stat-label">Repozytoriów publicznych</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">💻</div>
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-label">Języków programowania</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number" data-count="92">0</div>
+                    <div class="stat-label">Contributions w tym roku</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🔄</div>
+                    <div class="stat-number" data-count="27">0</div>
+                    <div class="stat-label">Commitów w tym miesiącu</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="tech-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Masz projekt technologiczny?</h2>
+                <p>Chcesz współpracować przy projekcie programistycznym, potrzebujesz konsultacji technologicznej lub masz pomysł na innowacyjne wykorzystanie AI w sztuce?</p>
+                <div class="cta-buttons">
+                    <a href="../kontakt/kontakt.html" class="btn-cta primary">Skontaktuj się</a>
+                    <a href="https://github.com/GrzeloMedialny" target="_blank" class="btn-cta secondary">Zobacz kod na GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="../index.html">Strona główna</a>
+                <a href="../galeria/galeria.html">Galeria</a>
+                <a href="../poetica/poetica.html">Poezja</a>
+                <a href="technikalia.html">Algorytmy</a>
+                <a href="../sklep/sklep.html">Sklep</a>
+                <a href="../kontakt/kontakt.html">Kontakt</a>
+            </div>
+            <p>&copy; 2024 Grzegorz Medialny. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Open GitHub in new tab
+        function openGitHub() {
+            window.open('https://github.com/GrzeloMedialny', '_blank');
+        }
+
+        function refreshGitHub() {
+            const refreshBtn = document.querySelector('.btn-refresh');
+            const originalText = refreshBtn.innerHTML;
+            
+            refreshBtn.innerHTML = '🔄 Odświeżanie...';
+            refreshBtn.disabled = true;
+            
+            setTimeout(() => {
+                refreshBtn.innerHTML = originalText;
+                refreshBtn.disabled = false;
+                showRefreshSuccess();
+            }, 1500);
+        }
+
+        function showRefreshSuccess() {
+            const successDiv = document.createElement('div');
+            successDiv.className = 'refresh-success';
+            successDiv.innerHTML = `
+                <div class="success-content">
+                    <div class="success-icon">✅</div>
+                    <p>Podgląd GitHub został odświeżony!</p>
+                </div>
+            `;
+            
+            document.body.appendChild(successDiv);
+            
+            setTimeout(() => {
+                successDiv.classList.add('show');
+            }, 100);
+            
+            setTimeout(() => {
+                successDiv.classList.remove('show');
+                setTimeout(() => {
+                    if (document.body.contains(successDiv)) {
+                        document.body.removeChild(successDiv);
+                    }
+                }, 300);
+            }, 3000);
+        }
+
+        // Animate stats on scroll
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
+                        const finalNumber = parseInt(target.getAttribute('data-count'));
+                        let count = 0;
+                        const increment = Math.ceil(finalNumber / 30);
+                        
+                        const timer = setInterval(() => {
+                            count += increment;
+                            if (count >= finalNumber) {
+                                target.textContent = finalNumber;
+                                clearInterval(timer);
+                            } else {
+                                target.textContent = count;
+                            }
+                        }, 50);
+                    }
+                });
+            }, { threshold: 0.7 });
+
+            statNumbers.forEach(stat => observer.observe(stat));
+        }
+
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function() {
+            animateStats();
+            
+            // Add click handler to GitHub screenshot
+            const screenshot = document.querySelector('.github-screenshot');
+            if (screenshot) {
+                screenshot.addEventListener('click', openGitHub);
+                screenshot.style.cursor = 'pointer';
+            }
+        });
+
+        // Add smooth scrolling to GitHub section
+        document.querySelector('.btn-github').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.github-container').scrollIntoView({
+                behavior: 'smooth'
+            });
+            
+            setTimeout(() => {
+                const screenshot = document.querySelector('.github-screenshot');
+                screenshot.style.transform = 'scale(1.02)';
+                screenshot.style.boxShadow = '0 20px 60px rgba(59, 130, 246, 0.3)';
+                
+                setTimeout(() => {
+                    screenshot.style.transform = 'scale(1)';
+                    screenshot.style.boxShadow = '0 15px 35px rgba(0,0,0,0.1)';
+                }, 1000);
+            }, 500);
+        });
+    </script>
+
+    <!-- Protection Script -->
+    <script>
+    (function() {
+      let shownNotice = false;
+
+      function showToast(message) {
+        if (shownNotice) return;
+        shownNotice = true;
+        const toast = document.createElement('div');
+        toast.innerText = message;
+        toast.style.position = 'fixed';
+        toast.style.bottom = '20px';
+        toast.style.right = '20px';
+        toast.style.background = 'rgba(30,58,138,0.95)';
+        toast.style.color = '#fff';
+        toast.style.padding = '12px 16px';
+        toast.style.borderRadius = '10px';
+        toast.style.boxShadow = '0 8px 20px rgba(0,0,0,0.2)';
+        toast.style.fontFamily = 'sans-serif';
+        toast.style.zIndex = '10000';
+        toast.style.opacity = '0';
+        toast.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+        document.body.appendChild(toast);
+        requestAnimationFrame(() => {
+          toast.style.opacity = '1';
+          toast.style.transform = 'translateY(0)';
+        });
+        setTimeout(() => {
+          toast.style.opacity = '0';
+          toast.style.transform = 'translateY(10px)';
+          setTimeout(() => {
+            if (document.body.contains(toast)) {
+              document.body.removeChild(toast);
+            }
+          }, 300);
+        }, 4000);
+      }
+
+      const noticeText = "Wszystkie prawa zastrzeżone. © 2024 Grzegorz Medialny.";
+
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        showToast(noticeText);
+      });
+
+      function keyEq(ev, key) {
+        return (ev.key || '').toLowerCase() === (key || '').toLowerCase();
+      }
+
+      document.addEventListener('keydown', function(e) {
+        const ctrlOrCmd = e.ctrlKey || e.metaKey;
+
+        if (e.key === 'F12') {
+          e.preventDefault(); 
+          e.stopPropagation(); 
+          return;
+        }
+
+        if (ctrlOrCmd && (keyEq(e, 'a') || keyEq(e, 'c') || keyEq(e, 'x') || keyEq(e, 'u') || keyEq(e, 's') || keyEq(e, 'p'))) {
+          e.preventDefault();
+          e.stopPropagation();
+          if (keyEq(e, 'c') || keyEq(e, 'a')) showToast(noticeText);
+          return false;
+        }
+
+        if ((e.ctrlKey || e.metaKey) && e.shiftKey && (keyEq(e, 'i') || keyEq(e, 'c'))) {
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        }
+      });
+    })();
+    </script>
+
+</body>
+</html>
