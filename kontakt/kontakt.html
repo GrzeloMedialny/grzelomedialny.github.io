@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Grzegorz Medialny</title>
+    <link rel="stylesheet" href="../kodex.css">
+    <link rel="stylesheet" href="kontakt-style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Grzegorz Medialny</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Strona główna</a></li>
+                <li><a href="../omnie/omnie.html">O mnie</a></li>
+                <li><a href="../galeria/galeria.html">Galeria</a></li>
+                <li><a href="../poetica/poetica.html">Poezja</a></li>
+                <li><a href="../technikalia/technikalia.html">Algorytmy</a></li>
+                <li><a href="../sklep/sklep.html">Sklep</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-contact">
+        <div class="container">
+            <h1>Skontaktuj się ze mną</h1>
+            <p>Masz pytania o moje prace, chcesz omówić współpracę czy zamówić sesję fotograficzną?</p>
+            <p class="hero-subtitle">Jestem otwarty na nowe projekty i artystyczne wyzwania</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="methods-grid">
+                <div class="method-card">
+                    <div class="method-icon">📧</div>
+                    <h3>E-mail</h3>
+                    <p>grzegorz@medialny.art</p>
+                    <a href="mailto:grzegorz@medialny.art" class="method-link">Napisz e-mail</a>
+                </div>
+                <div class="method-card">
+                    <div class="method-icon">📱</div>
+                    <h3>Telefon</h3>
+                    <p>+48 123 456 789</p>
+                    <a href="tel:+48123456789" class="method-link">Zadzwoń</a>
+                </div>
+                <div class="method-card">
+                    <div class="method-icon">📍</div>
+                    <h3>Lokalizacja</h3>
+                    <p>Warszawa, Polska</p>
+                    <span class="method-link">Spotkania na terenie Warszawy</span>
+                </div>
+                <div class="method-card">
+                    <div class="method-icon">🕒</div>
+                    <h3>Godziny pracy</h3>
+                    <p>Pon-Pt: 9:00-18:00</p>
+                    <span class="method-link">Weekendy: na umówienie</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="form-intro">
+                    <h2>Wyślij wiadomość</h2>
+                    <p>Skorzystaj z formularza kontaktowego - odpowiem najszybciej jak to możliwe, zazwyczaj w ciągu 24 godzin.</p>
+                    
+                    <div class="contact-topics">
+                        <h3>Tematy które mnie interesują:</h3>
+                        <ul>
+                            <li>📸 Sesje fotograficzne (portrety, eventy, produkty)</li>
+                            <li>🎨 Współpraca artystyczna i wystawy</li>
+                            <li>✍️ Projekty poetyckie i literackie</li>
+                            <li>🤖 Eksperymenty z AI w sztuce</li>
+                            <li>🛍️ Zamówienia niestandardowych prac</li>
+                            <li>📚 Warsztaty i prezentacje</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Imię *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span class="error-message">Imię jest wymagane</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nazwisko *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span class="error-message">Nazwisko jest wymagane</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message">Podaj poprawny adres e-mail</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone">
+                                <span class="error-message">Podaj poprawny numer telefonu</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Temat *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Wybierz temat</option>
+                                <option value="photography">Sesja fotograficzna</option>
+                                <option value="collaboration">Współpraca artystyczna</option>
+                                <option value="poetry">Projekt poetycki</option>
+                                <option value="ai-art">AI Art</option>
+                                <option value="purchase">Zakup pracy</option>
+                                <option value="workshop">Warsztat/Prezentacja</option>
+                                <option value="other">Inne</option>
+                            </select>
+                            <span class="error-message">Wybierz temat wiadomości</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Budżet (opcjonalnie)</label>
+                            <select id="budget" name="budget">
+                                <option value="">Wybierz przedział budżetowy</option>
+                                <option value="500-1000">500 - 1.000 zł</option>
+                                <option value="1000-2500">1.000 - 2.500 zł</option>
+                                <option value="2500-5000">2.500 - 5.000 zł</option>
+                                <option value="5000+">5.000+ zł</option>
+                                <option value="negocjable">Do negocjacji</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Wiadomość *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Opisz szczegółowo swój projekt lub pytanie..."></textarea>
+                            <span class="error-message">Wiadomość jest wymagana (min. 10 znaków)</span>
+                            <div class="char-counter">
+                                <span id="charCount">0</span>/1000 znaków
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                  Chcę otrzymywać newsletter z informacjami o nowych pracach
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                  Akceptuję <a href="#privacy-policy" class="privacy-link">politykę prywatności</a> *
+                            </label>
+                            <span class="error-message">Musisz zaakceptować politykę prywatności</span>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit" id="submitBtn">
+                            <span class="btn-text">Wyślij wiadomość</span>
+                            <span class="btn-loader" style="display: none;">Wysyłanie...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Response Time & FAQ -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>⚡ Czas odpowiedzi</h3>
+                    <p><strong>E-mail:</strong> do 24 godzin</p>
+                    <p><strong>Telefon:</strong> dostępny w godz. 9-18</p>
+                    <p><strong>Pilne sprawy:</strong> SMS lub WhatsApp</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>💼 Rodzaje projektów</h3>
+                    <p><strong>Sesje:</strong> Portrety, eventy, produkty</p>
+                    <p><strong>Sztuka:</strong> Wystawy, kolaboracje</p>
+                    <p><strong>Komercja:</strong> Materiały marketingowe</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>📋 Proces współpracy</h3>
+                    <p><strong>1.</strong> Wstępna rozmowa o projekcie</p>
+                    <p><strong>2.</strong> Przygotowanie wyceny</p>
+                    <p><strong>3.</strong> Realizacja i finalizacja</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Często zadawane pytania</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>Jak wygląda proces sesji fotograficznej?</h4>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Każda sesja rozpoczyna się od rozmowy o Twoich oczekiwaniach i wizji. Następnie ustalamy lokalizację, styl i szczegóły techniczne. W trakcie sesji kieruję i doradza, aby uzyskać najlepsze rezultaty. Po sesji następuje selekcja zdjęć i obróbka cyfrowa.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>Ile kosztuje sesja fotograficzna?</h4>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ceny sesji zależą od rodzaju, czasu trwania i lokalizacji. Sesje portretowe zaczynają się od 500 zł, sesje eventowe od 800 zł, a komercyjne od 1200 zł. Dokładną wycenę przygotowuję po omówieniu szczegółów projektu.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>Czy można kupić prawa do zdjęć?</h4>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tak, oferuję różne formy licencjonowania - od użytku osobistego po pełne prawa autorskie. Cena zależy od zakresu użytkowania i rodzaju licencji. Szczegóły omawiam indywidualnie z każdym klientem.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>Jak długo trwa obróbka zdjęć?</h4>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Standardowy czas obróbki to 7-14 dni roboczych, w zależności od ilości materiału. Dla projektów pilnych oferuję opcję express (2-3 dni) za dodatkową opłatą. Zawsze informuję o przewidywanym czasie realizacji przed rozpoczęciem prac.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>Czy prowadzisz warsztaty fotograficzne?</h4>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tak, regularnie organizuję warsztaty z fotografii cyfrowej, kompozycji i wykorzystania AI w sztuce. Prowadzę również indywidualne mentoring dla fotografów. Informacje o nadchodzących warsztatach publikuję w newsletterze i na social mediach.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>Czy współpracujesz z firmami?</h4>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oczywiście! Realizuję projekty dla firm z zakresu fotografii produktowej, eventowej, korporacyjnej oraz materiałów marketingowych. Oferuję również usługi z zakresu AI Art dla brandów szukających innowacyjnych rozwiązań wizualnych.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="social-section">
+        <div class="container">
+            <h2>Znajdź mnie w social media</h2>
+            <div class="social-links">
+                <a href="#" class="social-link instagram">
+                    <div class="social-icon">📷</div>
+                    <div class="social-info">
+                        <h4>Instagram</h4>
+                        <p>@grzegorz.medialny</p>
+                    </div>
+                </a>
+                <a href="#" class="social-link facebook">
+                    <div class="social-icon">👥</div>
+                    <div class="social-info">
+                        <h4>Facebook</h4>
+                        <p>Grzegorz Medialny Photography</p>
+                    </div>
+                </a>
+                <a href="#" class="social-link linkedin">
+                    <div class="social-icon">💼</div>
+                    <div class="social-info">
+                        <h4>LinkedIn</h4>
+                        <p>Grzegorz Medialny</p>
+                    </div>
+                </a>
+                <a href="#" class="social-link behance">
+                    <div class="social-icon">🎨</div>
+                    <div class="social-info">
+                        <h4>Behance</h4>
+                        <p>grzegorz-medialny</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="../index.html">Strona główna</a>
+                <a href="../galeria/galeria.html">Galeria</a>
+                <a href="../poetica/poetica.html">Poezja</a>
+                <a href="../technikalia/technikalia.html">Algorytmy</a>
+                <a href="../sklep/sklep.html">Sklep</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+            <p>&copy; 2024 Grzegorz Medialny. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form validation and submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const charCount = document.getElementById('charCount');
+            const messageField = document.getElementById('message');
+            
+            // Character counter for message field
+            messageField.addEventListener('input', function() {
+                const length = this.value.length;
+                charCount.textContent = length;
+                
+                if (length > 1000) {
+                    charCount.style.color = '#ef4444';
+                } else if (length > 800) {
+                    charCount.style.color = '#f59e0b';
+                } else {
+                    charCount.style.color = '#6b7280';
+                }
+            });
+            
+            // Form submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (validateForm()) {
+                    submitForm();
+                }
+            });
+            
+            // Real-time validation
+            const inputs = form.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+                input.addEventListener('blur', function() {
+                    validateField(this);
+                });
+                
+                input.addEventListener('input', function() {
+                    if (this.classList.contains('error')) {
+                        validateField(this);
+                    }
+                });
+            });
+        });
+        
+        function validateForm() {
+            const form = document.getElementById('contactForm');
+            const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+            let isValid = true;
+            
+            inputs.forEach(input => {
+                if (!validateField(input)) {
+                    isValid = false;
+                }
+            });
+            
+            return isValid;
+        }
+        
+        function validateField(field) {
+            const value = field.value.trim();
+            const fieldName = field.name;
+            let isValid = true;
+            let errorMessage = '';
+            
+            // Remove previous error state
+            field.classList.remove('error');
+            const errorSpan = field.parentNode.querySelector('.error-message');
+            
+            // Required field validation
+            if (field.hasAttribute('required') && !value) {
+                isValid = false;
+                errorMessage = field.previousElementSibling.textContent.replace(' *', '') + ' jest wymagane';
+            }
+            
+            // Specific field validation
+            switch (fieldName) {
+                case 'email':
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (value && !emailRegex.test(value)) {
+                        isValid = false;
+                        errorMessage = 'Podaj poprawny adres e-mail';
+                    }
+                    break;
+                    
+                case 'phone':
+                    if (value) {
+                        const phoneRegex = /^[\+]?[0-9\s\-\(\)]+$/;
+                        if (!phoneRegex.test(value) || value.length < 9) {
+                            isValid = false;
+                            errorMessage = 'Podaj poprawny numer telefonu';
+                        }
+                    }
+                    break;
+                    
+                case 'message':
+                    if (value && value.length < 10) {
+                        isValid = false;
+                        errorMessage = 'Wiadomość musi mieć minimum 10 znaków';
+                    }
+                    if (value.length > 1000) {
+                        isValid = false;
+                        errorMessage = 'Wiadomość nie może być dłuższa niż 1000 znaków';
+                    }
+                    break;
+                    
+                case 'firstName':
+                case 'lastName':
+                    if (value && value.length < 2) {
+                        isValid = false;
+                        errorMessage = 'Minimum 2 znaki';
+                    }
+                    break;
+            }
+            
+            // Show/hide error
+            if (!isValid) {
+                field.classList.add('error');
+                if (errorSpan) {
+                    errorSpan.textContent = errorMessage;
+                    errorSpan.style.display = 'block';
+                }
+            } else {
+                if (errorSpan) {
+                    errorSpan.style.display = 'none';
+                }
+            }
+            
+            return isValid;
+        }
+        
+        function submitForm() {
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoader = submitBtn.querySelector('.btn-loader');
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            btnText.style.display = 'none';
+            btnLoader.style.display = 'inline';
+            
+            // Simulate form submission (replace with actual submission)
+            setTimeout(() => {
+                // Reset button state
+                submitBtn.disabled = false;
+                btnText.style.display = 'inline';
+                btnLoader.style.display = 'none';
+                
+                // Show success message
+                showSuccessMessage();
+                
+                // Reset form
+                document.getElementById('contactForm').reset();
+                document.getElementById('charCount').textContent = '0';
+            }, 2000);
+        }
+        
+        function showSuccessMessage() {
+            const successDiv = document.createElement('div');
+            successDiv.className = 'success-message';
+            successDiv.innerHTML = `
+                <div class="success-content">
+                    <div class="success-icon">✅</div>
+                    <h3>Wiadomość została wysłana!</h3>
+                    <p>Dziękuję za kontakt. Odpowiem najszybciej jak to możliwe, zazwyczaj w ciągu 24 godzin.</p>
+                </div>
+            `;
+            
+            document.body.appendChild(successDiv);
+            
+            setTimeout(() => {
+                successDiv.classList.add('show');
+            }, 100);
+            
+            setTimeout(() => {
+                successDiv.classList.remove('show');
+                setTimeout(() => {
+                    document.body.removeChild(successDiv);
+                }, 300);
+            }, 5000);
+        }
+        
+        // FAQ toggle functionality
+        function toggleFaq(element) {
+            const faqItem = element.parentNode;
+            const answer = faqItem.querySelector('.faq-answer');
+            const icon = element.querySelector('.faq-icon');
+            
+            // Close other open FAQ items
+            document.querySelectorAll('.faq-item.active').forEach(item => {
+                if (item !== faqItem) {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-answer').style.maxHeight = null;
+                    item.querySelector('.faq-icon').textContent = '+';
+                }
+            });
+            
+            // Toggle current FAQ item
+            if (faqItem.classList.contains('active')) {
+                faqItem.classList.remove('active');
+                answer.style.maxHeight = null;
+                icon.textContent = '+';
+            } else {
+                faqItem.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.textContent = '−';
+            }
+        }
+    </script>
+
+<script>
+(function() {
+  // Czy pokazaliśmy już komunikat (żeby nie spamować)
+  let shownNotice = false;
+
+  // Funkcja tworząca mały toast zamiast alert()
+  function showToast(message) {
+    if (shownNotice) return;
+    shownNotice = true;
+    const toast = document.createElement('div');
+    toast.innerText = message;
+    toast.style.position = 'fixed';
+    toast.style.bottom = '20px';
+    toast.style.right = '20px';
+    toast.style.background = 'rgba(30,58,138,0.95)'; // #1e3a8a
+    toast.style.color = '#fff';
+    toast.style.padding = '12px 16px';
+    toast.style.borderRadius = '10px';
+    toast.style.boxShadow = '0 8px 20px rgba(0,0,0,0.2)';
+    toast.style.fontFamily = 'sans-serif';
+    toast.style.zIndex = '10000';
+    toast.style.opacity = '0';
+    toast.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+    document.body.appendChild(toast);
+    requestAnimationFrame(() => {
+      toast.style.opacity = '1';
+      toast.style.transform = 'translateY(0)';
+    });
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateY(10px)';
+      setTimeout(() => document.body.removeChild(toast), 300);
+    }, 4000);
+  }
+
+  // Tekst komunikatu
+  const noticeText = "Wszystkie prawa zastrzeżone.\n© 2025 Grzelo Medialny.";
+
+  // Blokada prawego przycisku + pokazanie komunikatu raz
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    showToast("Wszystkie prawa zastrzeżone. © 2025 Grzelo Medialny.");
+  });
+
+  // Pomocnicza funkcja porównująca klawisz bez względu na wielkość
+  function keyEq(ev, key) {
+    return (ev.key || '').toLowerCase() === (key || '').toLowerCase();
+  }
+
+  // Blokada kombinacji klawiszy
+  document.addEventListener('keydown', function(e) {
+    const ctrlOrCmd = e.ctrlKey || e.metaKey; // Ctrl na Windows, Cmd na Mac
+
+    // Lista blokowanych pojedynczych klawiszy (F12)
+    if (e.key === 'F12') {
+      e.preventDefault(); e.stopPropagation(); return;
+    }
+
+    // Ctrl/Cmd + (A, C, X, U, S, P)  => zaznaczanie/kopiowanie/wyświetl źródła/zapis/druk
+    if (ctrlOrCmd && (keyEq(e, 'a') || keyEq(e, 'c') || keyEq(e, 'x') || keyEq(e, 'u') || keyEq(e, 's') || keyEq(e, 'p'))) {
+      e.preventDefault();
+      e.stopPropagation();
+      // pokazuj komunikat tylko przy Ctrl+C/Ctrl+A (opcjonalnie)
+      if (keyEq(e, 'c') || keyEq(e, 'a')) showToast(noticeText);
+      return false;
+    }
+
+    // Ctrl+Shift+I / Ctrl+Shift+C (DevTools)
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (keyEq(e, 'i') || keyEq(e, 'c'))) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+  });
+
+  // Dodatkowo można wyłączyć selekcję (opcjonalnie) — odkomentuj jeśli chcesz
+  // document.documentElement.classList.add('no-select-js');
+
+})();
+</script>
+
+</body>
+</html>
