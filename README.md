@@ -21,3 +21,4 @@
         <h2>Kontakt</h2>
         <p>
             Napisz do mnie: <a href="mailto:grzelomedialny@interia.pl">grzelomedialny@interia.pl</a>
+
