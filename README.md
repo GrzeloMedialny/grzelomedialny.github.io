@@ -22,4 +22,3 @@
         <p>
             Napisz do mnie: <a href="mailto:grzelomedialny@interia.pl">grzelomedialny@interia.pl</a>
 
-
